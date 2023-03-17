@@ -120,7 +120,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+}
 
 #derecha div {
     width: 50%;
@@ -174,14 +174,14 @@ a:hover {
     font-size: 14px;
 }
 
-.diseño li::before{
+.diseño li::before {
     content: url(/img/Check.png);
     margin-right: 5px;
 }
 
 /* Planes y precios */
 
-.Plans_Pricing{
+.Plans_Pricing {
     font-size: 20px;
     background-color: #1e172f;
     padding: 10px;
@@ -193,27 +193,27 @@ a:hover {
 
 /* Texto planes y precios */
 
-.Plans_Pricing .texto{
+.Plans_Pricing .texto {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.Plans_Pricing .texto h2{
+.Plans_Pricing .texto h2 {
     font-size: 60px;
     color: white;
 }
 
-.Plans_Pricing .texto p{
-    color:#a0a0a0;
+.Plans_Pricing .texto p {
+    color: #a0a0a0;
     width: 780px;
     text-align: center;
 }
 
 /* Elementos Planes y precios */
 
-.Plans_Pricing .elementos{
+.Plans_Pricing .elementos {
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -230,12 +230,12 @@ a:hover {
     padding: 20px 0 0 0;
 }
 
-.Plans_Pricing .elemento_cont h3{
+.Plans_Pricing .elemento_cont h3 {
     color: #35304c;
     text-align: center;
 }
 
-.Plans_Pricing .elemento_cont .precios{
+.Plans_Pricing .elemento_cont .precios {
     background-color: #e9e6e6;
     width: 100%;
     display: flex;
@@ -243,27 +243,27 @@ a:hover {
     height: 130px;
 }
 
-.Plans_Pricing .valor{
+.Plans_Pricing .valor {
     display: flex;
 }
 
-.Plans_Pricing #precio{
+.Plans_Pricing #precio {
     font-size: 50px;
-    color:#292929;
+    color: #292929;
 }
 
-.Plans_Pricing #info{
+.Plans_Pricing #info {
     margin-top: 55px;
     font-size: 15px;
 }
 
-.Plans_Pricing .elemento_cont .lista{
+.Plans_Pricing .elemento_cont .lista {
     display: flex;
     text-align: center;
     width: 100%;
 }
 
-.Plans_Pricing .elemento_cont li{
+.Plans_Pricing .elemento_cont li {
     list-style: none;
     width: 180px;
     display: flex;
@@ -271,18 +271,18 @@ a:hover {
     padding: 5px 0px;
 }
 
-.Plans_Pricing .elemento_cont i{
+.Plans_Pricing .elemento_cont i {
     color: #292929;
 }
 
-.Plans_Pricing .elementos .elemento_cont .textos p{
-   text-align: center;
-   font-size: 15px;
-   width: 300px;
+.Plans_Pricing .elementos .elemento_cont .textos p {
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
 }
 
 
-.Plans_Pricing #lite h3{
+.Plans_Pricing #lite h3 {
     color: #f41888;
 }
 
@@ -292,7 +292,7 @@ a:hover {
 
 /* Boton Precios planes */
 
-.Plans_Pricing .boton{   
+.Plans_Pricing .boton {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -307,55 +307,55 @@ a:hover {
     background-color: #2e2550;
     padding: 12px;
     border-radius: 3px;
-    color:#e4e4e4;
+    color: #e4e4e4;
 }
 
 
-footer{
+footer {
     display: flex;
     height: 80px;
 }
 
-footer .contenido{
+footer .contenido {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-around;
 }
 
-footer .info{
+footer .info {
     font-size: 20px;
-    color:#696671;
+    color: #696671;
 }
 
-footer .info a{
-    color:#c9498b;
+footer .info a {
+    color: #c9498b;
 }
 
-footer .redes{
+footer .redes {
     display: flex;
     gap: 10px;
 }
 
-footer .redes a{
+footer .redes a {
     color: #3f3f3f;
     font-size: 25px;
 }
 
-@media screen and (max-width: 1024px){
-    
+@media screen and (max-width: 1024px) {
+
     .elementos {
         padding: 0 20px;
     }
 
-   .elemento_cont {
-    font-size: 20px;
-    width: 340px;
-   }
+    .elemento_cont {
+        font-size: 20px;
+        width: 340px;
+    }
 }
 
 
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
 
     #derecha img {
         display: none;
@@ -367,7 +367,11 @@ footer .redes a{
     }
 
     #contenidos {
-        width: 784px;
+        width: 684px;
+    }
+
+    #Fonctionnalités {
+        flex-wrap: wrap;
     }
 
     #cont_product_page {
@@ -375,25 +379,61 @@ footer .redes a{
         justify-content: center;
     }
 
+    .Plans_Pricing .texto p {
+        width: 600px;
+    }
+
+    .elementos {
+        flex-wrap: wrap;
+    }
+
     .elemento_cont {
         font-size: 20px;
         display: none;
         width: 300px;
-       }
+    }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:700px) {
 
-    #Fonctionnalités img{
+    nav {
+        flex-direction: column; 
+    }
+
+    #Fonctionnalités img {
         display: none;
     }
 
-    .Plans_Pricing .textos{
-        font-size: 13px;
-     }
+    #contenidos {
+        width: 0px;
+    }
+
+    .Plans_Pricing .texto p {
+        max-width: 90%;
+    }
 
     .elementos {
         flex-wrap: wrap;
-       }
-	
+    }
+
+    footer .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    nav {
+        flex-direction: column; 
+        justify-content:;
+    align-items: center;
+    }
+
+    #contenidos {
+        width: 0px;
+    }
+
+
 }
