@@ -421,18 +421,51 @@ footer .redes a {
         align-items: center;
     }
 
+    footer .info {
+        font-size: 14px;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width:400px) {
 
     nav {
         flex-direction: column; 
-        justify-content:;
-    align-items: center;
+        justify-content:space-evenly;
+        
+        align-items: center;
     }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav button {
+        height: 35px;
+        width: 70px;
+    }
+
+    #product_page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+    
 
     #contenidos {
         width: 0px;
+    }
+
+    footer .info {
+        font-size: 14px;
+        align-items: center;
     }
 
 
